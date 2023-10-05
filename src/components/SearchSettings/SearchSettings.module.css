@@ -1,0 +1,36 @@
+.searchSettingsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  min-height: 56px;
+  box-sizing: border-box;
+  padding: 0 7.5% 0 7.5%;
+  width: 100%;
+  column-gap: 2rem;
+}
+
+.rightFilters {
+  display: flex;
+  min-height: inherit;
+  justify-content: space-between;
+  width: 325px;
+}
+
+.leftFilters {
+  min-height: inherit;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+@media (max-width: 1150px) {
+  .rightFilters {
+    width: 100%;
+  }
+
+  .leftFilters {
+    width: 100%;
+  }
+}

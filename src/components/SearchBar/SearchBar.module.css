@@ -1,11 +1,12 @@
 .searchBar {
-  width: 480px;
+  width: 400px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  position: relative;
 }
 
 .searchBar input {
@@ -27,6 +28,27 @@
 
 .searchBar svg {
   position: absolute;
-  left: 8rem;
+  left: 3rem;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1124px) {
+  .searchBar {
+    width: 300px;
+  }
+
+  .searchBar svg {
+    position: absolute;
+    left: 2rem;
+  }
+
+  .searchBar input {
+    text-indent: 4rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .searchBar {
+    width: 225px;
+  }
 }

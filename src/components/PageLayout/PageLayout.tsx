@@ -1,4 +1,4 @@
-import { RootState } from "../store/store";
+import { RootState } from "../../store/store";
 import styles from "./PageLayout.module.css";
 import { useSelector } from "react-redux";
 

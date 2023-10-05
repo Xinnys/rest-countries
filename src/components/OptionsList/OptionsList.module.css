@@ -25,3 +25,15 @@
 .list li {
   cursor: pointer;
 }
+
+@media (max-width: 1124px) {
+  .list {
+    width: 150px;
+  }
+}
+
+@media (max-width: 540px) {
+  .list {
+    width: 80px;
+  }
+}

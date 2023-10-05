@@ -1,9 +1,0 @@
-.searchSettingsContainer {
-  display: flex;
-  justify-content: space-between;
-  min-height: 56px;
-  box-sizing: border-box;
-  padding: 0 7.5% 0 7.5%;
-  width: 100%;
-  /* height: 10%; */
-}

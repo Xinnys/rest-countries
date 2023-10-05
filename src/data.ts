@@ -1,15 +1,23 @@
-export enum Filter {
-  All = "All Regions",
-  Africa = "Africa",
-  America = "America",
-  Asia = "Asia",
-  Europe = "Europe",
-  Oceania = "Oceania",
-}
+import {
+  FilterOption,
+  FilterOptions,
+  SortingOption,
+  SortingOptions,
+} from "./models";
 
-export type Filters = Filter[];
+export const regionFilters: FilterOptions = [
+  FilterOption.All,
+  FilterOption.Africa,
+  FilterOption.Americas,
+  FilterOption.Asia,
+  FilterOption.Europe,
+  FilterOption.Oceania,
+];
 
-export enum Theme {
-  Light = "light",
-  Dark = "dark",
-}
+export const sortingOptions: SortingOptions = [
+  SortingOption.PopulationDesc,
+  SortingOption.PopulationAsc,
+  SortingOption.AZ,
+  SortingOption.ZA,
+  SortingOption.None,
+];

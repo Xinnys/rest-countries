@@ -1,15 +1,18 @@
 import styles from "./SearchBar.module.css";
 import { BiSearchAlt2 } from "react-icons/bi";
-import { useSelector } from "react-redux/es/exports";
-import { RootState } from "../store/store";
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux/es/exports";
+import { RootState } from "../../store/store";
+import { changeSearchKey } from "../../store/data-slice";
 
 const SearchBar = () => {
+  const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.ui.theme);
-  const [filterText, setFilterText] = useState("");
+  const filterText = useSelector(
+    (state: RootState) => state.data.currentSearchKey
+  );
 
   function handleUpdateFilterText(e: React.FormEvent<HTMLInputElement>) {
-    setFilterText(e.currentTarget.value);
+    dispatch(changeSearchKey(e.currentTarget.value));
   }
 
   return (

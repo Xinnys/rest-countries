@@ -1,0 +1,18 @@
+.button {
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #2b3844;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: black;
+}

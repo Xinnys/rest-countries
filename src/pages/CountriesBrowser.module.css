@@ -1,0 +1,45 @@
+.buttonArrow {
+  width: 50px;
+  height: 50px;
+}
+
+.buttonPrevious,
+.buttonNext {
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  top: 50%;
+  cursor: pointer;
+}
+
+.buttonPrevious {
+  right: 95%;
+}
+
+.buttonNext {
+  left: 95%;
+}
+
+.light {
+  color: #121b22;
+}
+
+.dark {
+  color: #ffffff;
+}
+
+.disabled,
+.disabled {
+  filter: contrast(1%);
+  cursor: default;
+}
+
+@media (max-width: 1060px) {
+  .buttonPrevious {
+    right: 90%;
+  }
+
+  .buttonNext {
+    left: 90%;
+  }
+}

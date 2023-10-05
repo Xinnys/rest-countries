@@ -1,20 +1,22 @@
 .filterBar {
-  width: 200px;
-}
-
-.filterBar button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 125px;
   height: 100%;
-  font-size: 1rem;
-
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.filterBar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .dark {
@@ -28,5 +30,5 @@
 }
 
 .filterBar button svg {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
