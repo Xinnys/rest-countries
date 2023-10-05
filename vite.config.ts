@@ -6,6 +6,6 @@ export default defineConfig({
   base: "/rest-countries/",
   plugins: [react()],
   build: {
-    outDir: "docs",
+    outDir: "dist",
   },
 });
