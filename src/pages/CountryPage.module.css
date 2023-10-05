@@ -42,7 +42,7 @@
 
 .countryInfoContainer img {
   width: 100%;
-  min-width: 460px;
+  /* min-width: 460px; */
   border-radius: 5px;
 }
 
@@ -76,6 +76,12 @@
   row-gap: 0.5rem;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .countryInfoContainer img {
+    min-width: 460px;
+  }
 }
 
 @media (max-width: 1000px) {

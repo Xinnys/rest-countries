@@ -43,3 +43,13 @@
     left: 90%;
   }
 }
+
+@media (max-width: 500px) {
+  .buttonPrevious {
+    right: 85%;
+  }
+
+  .buttonNext {
+    left: 85%;
+  }
+}

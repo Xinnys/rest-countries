@@ -18,3 +18,9 @@
   background-color: #fafafa;
   color: #111517;
 }
+
+@media (max-width: 600px) {
+  .pageContainer {
+    padding-top: 2rem;
+  }
+}
