@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: import.meta.env.DEV ? "/" : "/rest-countries/" }
+  { basename: "/rest-countries" }
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
