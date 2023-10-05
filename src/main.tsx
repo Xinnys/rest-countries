@@ -9,22 +9,25 @@ import CountryPage from "./pages/CountryPage.tsx";
 import { Provider } from "react-redux";
 import store from "./store/store.ts";
 
-const router = createBrowserRouter([
-  {
-    path: "",
-    element: <App />,
-    children: [
-      {
-        path: "",
-        element: <CountriesBrowser />,
-      },
-      {
-        path: "countries/:countryName",
-        element: <CountryPage />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "",
+      element: <App />,
+      children: [
+        {
+          path: "",
+          element: <CountriesBrowser />,
+        },
+        {
+          path: "countries/:countryName",
+          element: <CountryPage />,
+        },
+      ],
+    },
+  ],
+  { basename: import.meta.env.DEV ? "/" : "/rest-countries/" }
+);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
