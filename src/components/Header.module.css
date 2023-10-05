@@ -1,0 +1,49 @@
+.header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7.5% 0 7.5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0562);
+}
+
+.dark {
+  background-color: #2b3844;
+  color: #ffffff;
+}
+
+.dark a {
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: black;
+}
+
+.light a {
+  color: black;
+}
+
+.light button {
+  color: black;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* color: black; */
+}
+
+.header button {
+  display: flex;
+  justify-content: space-between;
+  min-width: 112px;
+  background-color: transparent;
+  border: none;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.countryListContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0 7.5% 0 7.5%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  display: flex;
+  column-gap: 45px;
+  row-gap: 45px;
+  flex-basis: content;
+  flex-wrap: wrap;
+}

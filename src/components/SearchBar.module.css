@@ -1,0 +1,32 @@
+.searchBar {
+  width: 480px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.searchBar input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  text-indent: 5rem;
+  font-size: 1.25rem;
+}
+
+.light {
+  color: black;
+}
+
+.dark {
+  color: white;
+}
+
+.searchBar svg {
+  position: absolute;
+  left: 8rem;
+  font-size: 1.5rem;
+}
