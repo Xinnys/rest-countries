@@ -49,6 +49,21 @@
 
 @media (max-width: 540px) {
   .searchBar {
-    width: 225px;
+    width: 65vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchBar {
+    width: 60vw;
+    min-width: 225px;
+  }
+
+  .searchBar input {
+    text-indent: 0.5rem;
+  }
+
+  .searchBar svg {
+    display: none;
   }
 }

@@ -42,12 +42,12 @@
 
 .countryInfoContainer img {
   width: 100%;
-  /* min-width: 460px; */
   border-radius: 5px;
 }
 
 .countryInfo {
   width: 100%;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,5 +96,11 @@
 
   .countryInfo h2 {
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .countryInfo {
+    min-width: 350px;
   }
 }
