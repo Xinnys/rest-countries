@@ -62,3 +62,28 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 530px) {
+  .card {
+    width: 133px;
+    height: 189px;
+  }
+
+  .countryDetails {
+    max-height: 60%;
+  }
+
+  .card img {
+    width: 134px;
+    height: 91px;
+  }
+
+  .countryDetails p {
+    font-size: 0.65rem;
+  }
+
+  .countryDetails h3 {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+}
