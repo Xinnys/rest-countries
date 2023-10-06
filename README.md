@@ -18,3 +18,9 @@ Based on Frontend Mentor advanced challenge: https://www.frontendmentor.io/chall
 - browser router with implemented search params and params for filtering and routing
 - sorting
 - user can define how many countries should be displayed
+
+# Screenshots
+
+![Desktop](/desktop.png?raw=true "Desktop")
+
+![Mobile](/mobile.png?raw=true "Mobile")
