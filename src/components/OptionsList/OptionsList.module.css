@@ -40,4 +40,9 @@
   .list {
     width: 80px;
   }
+
+  .list {
+    padding-left: 0.5rem;
+    box-sizing: content-box;
+  }
 }
