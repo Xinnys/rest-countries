@@ -44,5 +44,6 @@
   .list {
     padding-left: 0.5rem;
     box-sizing: content-box;
+    text-align: center;
   }
 }
