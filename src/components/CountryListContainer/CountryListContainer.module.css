@@ -10,3 +10,10 @@
   flex-basis: content;
   flex-wrap: wrap;
 }
+
+@media (max-width: 600px) {
+  .countryListContainer {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
