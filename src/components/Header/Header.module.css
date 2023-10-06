@@ -48,3 +48,7 @@
   cursor: pointer;
   column-gap: 0.5rem;
 }
+
+.header button:hover {
+  filter: contrast(0.25);
+}

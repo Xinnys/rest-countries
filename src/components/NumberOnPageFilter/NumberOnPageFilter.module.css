@@ -19,6 +19,14 @@
   cursor: pointer;
 }
 
+.filterBar:hover {
+  filter: brightness(1.1);
+}
+
+.filterBar button:hover {
+  transform: scale(1.2);
+}
+
 .dark {
   background-color: #2b3844;
   color: #ffffff;

@@ -17,6 +17,7 @@
 }
 
 .backButton {
+  width: 100px;
   background-color: transparent;
   border: none;
   font-size: 1.25rem;
@@ -28,6 +29,10 @@
 
 .backButton svg {
   font-size: 2rem;
+}
+
+.backButton:hover {
+  transform: scale(1.1);
 }
 
 .countryInfoContainer {

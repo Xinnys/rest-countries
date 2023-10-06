@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.list li:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 1124px) {
   .list {
     width: 150px;

@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.button:hover {
+  transform: scale(1.1);
+}
+
 .dark {
   background-color: #2b3844;
   color: #ffffff;

@@ -33,6 +33,14 @@
   padding: 0;
   margin: 0;
 }
+/* 
+.countryDetails h3 {
+  margin-top: 0.25rem;
+} */
+
+.card:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 1124px) {
   .card {
