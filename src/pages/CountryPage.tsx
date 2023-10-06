@@ -39,6 +39,12 @@ const CountryPage = () => {
     ? Object.values(countryNativeName)[0].official
     : undefined;
 
+  const domains = country?.tld;
+  const domainNames: string[] = [];
+  if (domains) {
+    Object.values(domains).forEach((domain) => domainNames.push(domain));
+  }
+
   const currencies = country?.currencies;
   const currencyNames: string[] = [];
   if (currencies) {
@@ -111,7 +117,14 @@ const CountryPage = () => {
                 <div>
                   <p>
                     <b>Top Level Domain: </b>{" "}
-                    {country?.tld ? country?.tld : "none"}
+                    {domainNames.length > 0
+                      ? domainNames.map((domain, index) => (
+                          <span key={domain}>
+                            {domain}
+                            {index < domainNames.length - 1 ? ", " : ""}
+                          </span>
+                        ))
+                      : "none"}
                   </p>
                   <p>
                     <b>Currencies: </b>
