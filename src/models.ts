@@ -36,8 +36,8 @@ export enum Theme {
 }
 
 export enum SortingOption {
-  AZ = "A - Z",
-  ZA = "Z - A",
+  AZ = "A-Z",
+  ZA = "Z-A",
   PopulationDesc = "Population desc",
   PopulationAsc = "Population asc",
   None = "-",

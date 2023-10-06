@@ -11,7 +11,11 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { applySorting } from "../utils/sorting";
 
 import styles from "./CountriesBrowser.module.css";
-import { changeRegionFilter, changeSearchKey } from "../store/data-slice";
+import {
+  changeRegionFilter,
+  changeSearchKey,
+  changeSortingOption,
+} from "../store/data-slice";
 
 const CountriesBrowser = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -25,15 +29,13 @@ const CountriesBrowser = () => {
     currentSortingOption,
   } = useSelector((state: RootState) => state.data);
 
-  console.log(currentSortingOption);
-
   const [searchParams, setSearchParams] = useSearchParams();
   const [isInitialRender, setIsInitialRender] = useState(true);
 
   const regionSearchParam = searchParams.get("region");
-  console.log(regionSearchParam);
   const pageSearchParam = searchParams.get("page");
   const searchKeyParam = searchParams.get("searchKey");
+  const sortByParam = searchParams.get("sortBy");
 
   const navigate = useNavigate();
 
@@ -60,6 +62,12 @@ const CountriesBrowser = () => {
       } else {
         dispatch(changeSearchKey(""));
       }
+
+      if (sortByParam) {
+        dispatch(changeSortingOption(sortByParam));
+      } else {
+        dispatch(changeSortingOption("A-Z"));
+      }
       setIsInitialRender(false);
     }
 
@@ -67,18 +75,22 @@ const CountriesBrowser = () => {
       region: currentRegionFilter,
       page: currentPage.toString(),
       searchKey: currentSearchKey,
+      sortBy: currentSortingOption,
     });
-  }, [currentPage, currentRegionFilter, currentSearchKey]);
+  }, [
+    currentPage,
+    currentRegionFilter,
+    currentSearchKey,
+    currentSortingOption,
+  ]);
 
-  const readyCountries = applyFilters(
+  const filteredCountries = applyFilters(
     currentRegionFilter,
     currentSearchKey,
     countriesData
   );
 
-  const sortedCountries = applySorting(readyCountries, currentSortingOption);
-
-  console.log(sortedCountries);
+  const sortedCountries = applySorting(filteredCountries, currentSortingOption);
 
   function handleNextPageClick() {
     if (currentPage < Math.floor(sortedCountries.length / countriesOnPage)) {
